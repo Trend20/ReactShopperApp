@@ -5,7 +5,7 @@ function Header() {
   return (
    <Router>
       <div className='header' style={styles.header}>
-        <div className="logo">
+        <div className="logo" style={{ display: 'flex', alignItems: 'center' }}>
           <Link to="/" style={styles.logoStyle}>Shopper</Link>
         </div>
         <div className="navbar" style={styles.navbar}>
@@ -28,13 +28,14 @@ const styles = {
      alignItems: 'center',
      justifyContent: 'space-around',
      width: '100%',
-     padding: 18,
-   },
+     padding: 18, 
+    },
    logoStyle:{
       padding: 15,
       textDecoration: 'none',
       fontWeight: 'bold',
-      fontSize: '1rem'
+      fontSize: '1rem',
+      height: 'auto'
    },
    navbar:{
      display: 'flex',
