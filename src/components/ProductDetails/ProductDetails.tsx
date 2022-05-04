@@ -3,11 +3,6 @@ import React, { useState, useEffect } from 'react'
 
 function ProductDetails(props: any) {
   const {title, price, category, description, img} = props;
-  const [product, setProduct] = useState([]);
-
-  useEffect(() =>{
-    axios.get('https://fakestoreapi.com/products')
-  },[]);
   return (
     <div className='product-details'>
       <div className="section-img">
